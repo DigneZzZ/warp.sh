@@ -153,7 +153,7 @@ Install_Requirements_Debian() {
 Install_WARP_Client_Debian() {
     if [[ ${SysInfo_OS_Name_lowercase} = ubuntu ]]; then
         case ${SysInfo_OS_CodeName} in
-        bionic | focal | jammy) ;;
+        bionic | focal | jammy | noble) ;;
         *)
             log ERROR "This operating system is not supported."
             exit 1
